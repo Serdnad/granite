@@ -23,6 +23,7 @@ class Granite::Adapter::Pg < Granite::Adapter::Base
       "Array(Float32)" => "REAL[]",
       "Array(Float64)" => "DOUBLE PRECISION[]",
       "Array(Bool)"    => "BOOLEAN[]",
+      "JSON::Any"      => "JSONB",
     }
   end
 
