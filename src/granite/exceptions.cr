@@ -3,7 +3,7 @@ module Granite
     getter model : Granite::Base
 
     def initialize(class_name : String, model : Granite::Base)
-      super("Could not process #{class_name}")
+      super("Could not process #{class_name}. Errors: #{model.errors}")
 
       @model = model
     end
